@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="TestTween"
-run/main_scene="res://Control.tscn"
+run/main_scene="res://TestSome.tscn"
 config/icon="res://icon.png"
 config/features=PackedStringArray("4.0")
 

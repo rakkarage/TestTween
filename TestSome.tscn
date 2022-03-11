@@ -1,0 +1,102 @@
+[gd_scene load_steps=3 format=3 uid="uid://qev251q7cpnx"]
+
+[ext_resource type="Script" path="res://TestSome.gd" id="1_q63xr"]
+[ext_resource type="Texture2D" uid="uid://cycpwn4fvk0kp" path="res://icon.png" id="2_2xdey"]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Panel" type="Panel" parent="."]
+minimum_size = Vector2(416, 416)
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -208.0
+offset_top = -208.0
+offset_right = 208.0
+offset_bottom = 208.0
+script = ExtResource( "1_q63xr" )
+
+[node name="Sprite2D1" type="Sprite2D" parent="Panel"]
+position = Vector2(0, 32)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource( "2_2xdey" )
+
+[node name="Sprite2D2" type="Sprite2D" parent="Panel"]
+position = Vector2(0, 64)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource( "2_2xdey" )
+
+[node name="Sprite2D3" type="Sprite2D" parent="Panel"]
+position = Vector2(0, 96)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource( "2_2xdey" )
+
+[node name="Sprite2D4" type="Sprite2D" parent="Panel"]
+position = Vector2(0, 128)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource( "2_2xdey" )
+
+[node name="Sprite2D5" type="Sprite2D" parent="Panel"]
+position = Vector2(0, 160)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource( "2_2xdey" )
+
+[node name="Sprite2D6" type="Sprite2D" parent="Panel"]
+position = Vector2(0, 192)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource( "2_2xdey" )
+
+[node name="Sprite2D7" type="Sprite2D" parent="Panel"]
+position = Vector2(0, 224)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource( "2_2xdey" )
+
+[node name="Sprite2D8" type="Sprite2D" parent="Panel"]
+position = Vector2(0, 256)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource( "2_2xdey" )
+
+[node name="Sprite2D9" type="Sprite2D" parent="Panel"]
+position = Vector2(0, 288)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource( "2_2xdey" )
+
+[node name="Sprite2D10" type="Sprite2D" parent="Panel"]
+position = Vector2(0, 320)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource( "2_2xdey" )
+
+[node name="Sprite2D11" type="Sprite2D" parent="Panel"]
+position = Vector2(0, 352)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource( "2_2xdey" )
+
+[node name="Sprite2D12" type="Sprite2D" parent="Panel"]
+position = Vector2(0, 384)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource( "2_2xdey" )
+
+[node name="OptionButton" type="OptionButton" parent="Panel"]
+minimum_size = Vector2(75, 0)
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -37.5
+offset_top = -15.5
+offset_right = 37.5
+offset_bottom = 15.5
+text = "In"
+item_count = 4
+selected = 0
+popup/item_0/text = "In"
+popup/item_0/id = 0
+popup/item_1/text = "Out"
+popup/item_1/id = 1
+popup/item_2/text = "InOut"
+popup/item_2/id = 2
+popup/item_3/text = "OutIn"
+popup/item_3/id = 3
