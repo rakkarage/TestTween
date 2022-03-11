@@ -78,25 +78,3 @@ texture = ExtResource( "2_2xdey" )
 position = Vector2(0, 384)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource( "2_2xdey" )
-
-[node name="OptionButton" type="OptionButton" parent="Panel"]
-minimum_size = Vector2(75, 0)
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -37.5
-offset_top = -15.5
-offset_right = 37.5
-offset_bottom = 15.5
-text = "In"
-item_count = 4
-selected = 0
-popup/item_0/text = "In"
-popup/item_0/id = 0
-popup/item_1/text = "Out"
-popup/item_1/id = 1
-popup/item_2/text = "InOut"
-popup/item_2/id = 2
-popup/item_3/text = "OutIn"
-popup/item_3/id = 3

@@ -1,25 +1,18 @@
 extends Node
 
-@onready var _option := $OptionButton
-
 func _ready() -> void:
-	_option.connect("item_selected", _some)
-	_some()
-
-func _some() -> void:
-	var et = _option.selected
-	_go($Sprite2D1, et, Tween.TRANS_LINEAR)
-	_go($Sprite2D2, et, Tween.TRANS_SINE)
-	_go($Sprite2D3, et, Tween.TRANS_QUINT)
-	_go($Sprite2D4, et, Tween.TRANS_QUART)
-	_go($Sprite2D5, et, Tween.TRANS_QUAD)
-	_go($Sprite2D6, et, Tween.TRANS_EXPO)
-	_go($Sprite2D7, et, Tween.TRANS_ELASTIC)
-	_go($Sprite2D8, et, Tween.TRANS_CUBIC)
-	_go($Sprite2D9, et, Tween.TRANS_CIRC)
-	_go($Sprite2D10, et, Tween.TRANS_BOUNCE)
-	_go($Sprite2D11, et, Tween.TRANS_BACK)
-	_go($Sprite2D12, et, Tween.TRANS_SPRING)
+	_go($Sprite2D1, Tween.EASE_OUT, Tween.TRANS_LINEAR)
+	_go($Sprite2D2, Tween.EASE_OUT, Tween.TRANS_SINE)
+	_go($Sprite2D3, Tween.EASE_OUT, Tween.TRANS_QUINT)
+	_go($Sprite2D4, Tween.EASE_OUT, Tween.TRANS_QUART)
+	_go($Sprite2D5, Tween.EASE_OUT, Tween.TRANS_QUAD)
+	_go($Sprite2D6, Tween.EASE_OUT, Tween.TRANS_EXPO)
+	_go($Sprite2D7, Tween.EASE_OUT, Tween.TRANS_ELASTIC)
+	_go($Sprite2D8, Tween.EASE_OUT, Tween.TRANS_CUBIC)
+	_go($Sprite2D9, Tween.EASE_OUT, Tween.TRANS_CIRC)
+	_go($Sprite2D10, Tween.EASE_OUT, Tween.TRANS_BOUNCE)
+	_go($Sprite2D11, Tween.EASE_OUT, Tween.TRANS_BACK)
+	_go($Sprite2D12, Tween.EASE_OUT, Tween.TRANS_SPRING)
 
 func _go(c: CanvasItem, et: Tween.EaseType, tt: Tween.TransitionType) -> void:
 	var t := create_tween()
